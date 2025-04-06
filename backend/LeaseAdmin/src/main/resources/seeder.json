@@ -1,0 +1,35 @@
+[
+  {
+    "contractNumber": "CN-001",
+    "leaseStartDate": "2023-01-01",
+    "leaseEndDate": "2023-12-31",
+    "leaseType": "Operating",
+    "lessee": "ABC Corporation",
+    "lessor": "XYZ Leasing",
+    "leasePayment": 1000.0,
+    "residualValue": 5000.0,
+    "initialDirectCosts": 300.0
+  },
+  {
+    "contractNumber": "CN-002",
+    "leaseStartDate": "2023-02-01",
+    "leaseEndDate": "2024-01-31",
+    "leaseType": "Finance",
+    "lessee": "DEF Enterprises",
+    "lessor": "LMN Leasing",
+    "leasePayment": 1500.0,
+    "residualValue": 6000.0,
+    "initialDirectCosts": 400.0
+  },
+  {
+    "contractNumber": "CN-003",
+    "leaseStartDate": "2023-03-01",
+    "leaseEndDate": "2024-02-28",
+    "leaseType": "Operating",
+    "lessee": "GHI Industries",
+    "lessor": "OPQ Leasing",
+    "leasePayment": 1200.0,
+    "residualValue": 5500.0,
+    "initialDirectCosts": 350.0
+  }
+]
