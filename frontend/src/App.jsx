@@ -1,31 +1,26 @@
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Register from './components/Register';
-import './App.css'
+import LeaseList from './components/LeaseList';
+import './App.css';
 
-function App() {
-
+const App = () => {
   return (
     <Router>
-      <div className="app">
-        <nav className="navbar">
-          <h1>Lease Admin</h1>
-          <ul>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/register">Register</Link></li>
-          </ul>
-        </nav>
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Routes>
-        </div>
+      <Navbar />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/leases" element={<LeaseList />} />
+        </Routes>
       </div>
     </Router>
   );
+};
 
-}
-export default App
+export default App;
