@@ -1,0 +1,31 @@
+/* src/components/Lease.css */
+.lease-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .lease-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .lease-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .lease-table th,
+  .lease-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .lease-table th {
+    background-color: #f2f2f2;
+  }
+  
