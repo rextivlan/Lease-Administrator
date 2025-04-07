@@ -1,10 +1,11 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Register from './components/Register';
 import LeaseList from './components/LeaseList';
+import LeaseForm from './components/LeaseForm';
 import './App.css';
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/leases" element={<LeaseList />} />
+          <Route path="/lease/new" element={<LeaseForm />} />
+          <Route path="/lease/edit/:id" element={<LeaseForm />} />
         </Routes>
       </div>
     </Router>
